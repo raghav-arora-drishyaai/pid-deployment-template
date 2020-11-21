@@ -15,7 +15,7 @@ pool:
   vmImage: 'Ubuntu-latest'
 
 steps:
-- task: AzureCLI@2.14
+- task: AzureCLI@2.14.2
   displayName: 'Install AML CLI'
   inputs:
     azureSubscription: $(ml-ws-connection)
