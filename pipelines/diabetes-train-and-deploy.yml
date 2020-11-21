@@ -32,7 +32,7 @@ steps:
     scriptType: 'bash'
     inlineScript: 'az ml folder attach -w $(ml-ws) -g $(ml-rg)'
 
-- task: AzureCLI@2
+- task: AzureCLI@2.14.2
   displayName: 'Create compute for training'
   inputs:
     azureSubscription: $(ml-ws-connection)
