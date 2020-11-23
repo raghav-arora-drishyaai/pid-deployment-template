@@ -14,9 +14,9 @@ def init():
     
     global model
     model_name = 'diabetes-model'
-    model_version = '15'
+    model_version = '16'
     ridge_file = 'ridge_0.95.pkl' 
-    model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), model_name, model_version, ridge_file)
+    model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), ridge_file)
     # model_path = Model.get_model_path('diabetes-model')
 
     with open(model_path, 'rb') as file:
