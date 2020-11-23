@@ -14,15 +14,15 @@ def init():
     
     global model
     model_name = 'diabetes-model'
-    model_version = '14'
+    model_version = '15'
     ridge_file = 'ridge_0.95.pkl' 
     model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), model_name, model_version, ridge_file)
     # model_path = Model.get_model_path('diabetes-model')
 
-    # with open(model_path, 'rb') as file:
-        # model = pickle.load(file)
+    with open(model_path, 'rb') as file:
+        model = pickle.load(file)
     
-    model = pickle.load(model_path)
+    # model = pickle.load(model_path)
     # For demonstration purposes only
     # print(mylib.get_alphas())
 
