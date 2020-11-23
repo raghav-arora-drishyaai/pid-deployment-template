@@ -102,3 +102,4 @@ steps:
 #    scriptLocation: inlineScript
 #    scriptType: 'bash'
 #    inlineScript: 'az ml service delete -n diabetes-qa-aci'
+
