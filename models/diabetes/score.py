@@ -13,9 +13,9 @@ from utils import mylib
 def init():
     
     global model
-    eleventh_model_name = 'diabetes-model'
-    eleventh_model_version = '11' 
-    model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), eleventh_model_name, eleventh_model_version, 'ridge_0.95.pkl')
+    model_name = 'diabetes-model'
+    model_version = '13' 
+    model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), model_name, model_version)
     # model_path = Model.get_model_path('diabetes-model')
 
     with open(model_path, 'rb') as file:
