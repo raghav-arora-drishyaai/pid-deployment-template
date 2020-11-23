@@ -10,6 +10,7 @@ from utils import mylib
 
 
 def init():
+    
     global model
     model_path = Model.get_model_path('diabetes-model')
 
@@ -17,7 +18,7 @@ def init():
         model = pickle.load(file)
     
     # For demonstration purposes only
-    print(mylib.get_alphas())
+    #print(mylib.get_alphas())
 
 input_sample = np.array([[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]])
 output_sample = np.array([3726.995])
